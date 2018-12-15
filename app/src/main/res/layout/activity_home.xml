@@ -1,65 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#9adfff"
-    android:gravity="center"
+    android:padding="16dp"
     tools:context=".HomeActivity">
 
-
     <LinearLayout
-        android:id="@+id/first_group"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:orientation="horizontal">
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="16dp">
 
-        <android.support.design.widget.FloatingActionButton
-            android:id="@+id/school_button"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:layout_centerHorizontal="true"
-            android:layout_margin="16dp"
-            android:src="@drawable/ic_school_white_24dp" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/school_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/school_button"
+                android:textSize="18sp"
+                tools:text="15" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/school_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_school_white_24dp"
+                app:fabSize="normal" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/work_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/work_button"
+                android:textSize="18sp"
+                tools:text="15" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/work_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_work_white_24dp"
+                app:fabSize="normal" />
+
+        </RelativeLayout>
+
 
     </LinearLayout>
 
 
-    <LinearLayout
-        android:id="@+id/third_group"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/first_group"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:orientation="horizontal">
-
-        <android.support.design.widget.FloatingActionButton
-            android:id="@+id/work_button"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:layout_below="@id/first_group"
-            android:layout_centerHorizontal="true"
-            android:layout_margin="16dp"
-            android:src="@drawable/ic_work_white_24dp" />
-    </LinearLayout>
-
-    <LinearLayout
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/add_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginRight="14dp"
-        android:layout_marginBottom="12dp">
-
-        <android.support.design.widget.FloatingActionButton
-            android:id="@+id/add_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_add_black_24dp" />
-    </LinearLayout>
+        android:src="@drawable/ic_add_black_24dp"
+        app:fabSize="normal" />
 
 
 </RelativeLayout>

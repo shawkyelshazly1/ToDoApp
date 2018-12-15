@@ -78,8 +78,17 @@ public class ViewActivity extends AppCompatActivity implements LoaderManager.Loa
             case R.id.delete_item:
                 deleteItem();
                 return true;
+            case R.id.edit_item:
+                editItem();
+                return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    private void editItem() {
+        Intent goEdit = new Intent(ViewActivity.this, AddActivity.class);
+        goEdit.setData(mCurrentUri);
+        startActivity(goEdit);
     }
 
     private void deleteItem() {

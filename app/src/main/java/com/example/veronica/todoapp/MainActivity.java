@@ -68,6 +68,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
             @Override
             public void onClick(View view) {
                 Intent addPageIntent = new Intent(MainActivity.this, AddActivity.class);
+                addPageIntent.putExtra("category", category);
                 startActivity(addPageIntent);
             }
         });
