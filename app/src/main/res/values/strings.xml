@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">To Do App</string>
+    <string name="add_new">Add New</string>
+    <string name="task">Task</string>
+    <string name="view_item">View Item</string>
+    <string name="add_item">Edit Item</string>
+    <string name="new_item_toast">New Item Added</string>
+    <string name="failed_add_toast">Failed Add Item</string>
+    <string name="title_empty_error_toast">Title Cannot Be Empty</string>
+    <string name="delete_items_failed_msg">No Items To Delete</string>
+    <string name="delete_items_successful_msg">Items Were Deleted</string>
+    <string name="item_deleted_msg">Item Was Deleted</string>
+    <string name="school_category">School</string>
+    <string name="work_category">Work</string>
+</resources>

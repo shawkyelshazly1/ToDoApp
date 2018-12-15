@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array_category_options">
+        <item>@string/school_category</item>
+        <item>@string/work_category</item>
+    </string-array>
+</resources>
